@@ -34,6 +34,9 @@ class Queue:
         else:
             raise StopIteration
 
+    def __str__(self):
+        return f"{self.queue}"
+
 
 def main():
 
@@ -49,7 +52,7 @@ def main():
     queue.dequeue()
     # Consultando novamente a fila.
     queue.show()
-
+    print(queue)
     # Iterando na fila.
     for item in queue:
         print(item)
